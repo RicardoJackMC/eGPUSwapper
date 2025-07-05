@@ -1,0 +1,12 @@
+{
+    "device_ID": null,
+    "device_name": null,
+    "time": 0.5,
+    "devcon": false,
+    "devcon_path": null,
+    "swap_out_notice": true,
+    "swap_in_notice": true,
+    "icon": "default",
+    "notice_icon": "resource\\logo.ico",
+    "theme_index": 2
+}

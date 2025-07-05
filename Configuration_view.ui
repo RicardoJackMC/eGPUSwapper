@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>1156</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="leftMargin">
+    <number>18</number>
+   </property>
+   <property name="topMargin">
+    <number>32</number>
+   </property>
+   <property name="rightMargin">
+    <number>18</number>
+   </property>
+   <property name="bottomMargin">
+    <number>18</number>
+   </property>
+   <item>
+    <widget class="TitleLabel" name="TitleLabel">
+     <property name="text">
+      <string>设置</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="BodyLabel" name="BodyLabel">
+     <property name="text">
+      <string>设备</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item row="3" column="1" colspan="2">
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_2">
+           <property name="text">
+            <string>设备 ID</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel_5">
+           <property name="text">
+            <string>设置应用控制的设备的 ID</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="IconWidget" name="IconWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="SearchLineEdit" name="SearchLineEdit"/>
+      </item>
+      <item row="3" column="3">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="0" colspan="5">
+       <widget class="IndeterminateProgressBar" name="IndeterminateProgressBar"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_5">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item row="3" column="1" colspan="2">
+       <widget class="QWidget" name="widget_6" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_10">
+           <property name="text">
+            <string>检查频率</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel_6">
+           <property name="text">
+            <string>每次检查设备的间隔, 间隔越小性能开销越大, 但是响应速度更快</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="IconWidget" name="IconWidget_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="5">
+       <widget class="BodyLabel" name="BodyLabel_11">
+        <property name="text">
+         <string>秒</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="DoubleSpinBox" name="DoubleSpinBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_8">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item row="3" column="3">
+       <spacer name="horizontalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="4">
+       <widget class="SwitchButton" name="SwitchButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="onText">
+         <string/>
+        </property>
+        <property name="offText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="IconWidget" name="IconWidget_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QWidget" name="widget_7" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_12">
+           <property name="text">
+            <string>使用 devcon.exe</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel_7">
+           <property name="text">
+            <string>可获得更快的响应速度</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_9">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item row="3" column="0">
+       <widget class="IconWidget" name="IconWidget_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QWidget" name="widget_8" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_14">
+           <property name="text">
+            <string>配置 devcon.exe</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel_8">
+           <property name="text">
+            <string>指定 devcon.exe 的位置, 或将其放在本应用所在文件夹中</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <spacer name="horizontalSpacer_11">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="4">
+       <widget class="PushButton" name="PushButton_2">
+        <property name="text">
+         <string>选择文件(devcon.exe)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="BodyLabel" name="BodyLabel_8">
+     <property name="text">
+      <string>通知</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_3">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item>
+       <widget class="BodyLabel" name="BodyLabel_4">
+        <property name="text">
+         <string>启用设备时发送通知</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>113</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="SwitchButton" name="SwitchButton_4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="onText">
+         <string/>
+        </property>
+        <property name="offText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_4">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item>
+       <widget class="BodyLabel" name="BodyLabel_3">
+        <property name="text">
+         <string>禁用设备时发送通知</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>113</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="SwitchButton" name="SwitchButton_3">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="onText">
+         <string/>
+        </property>
+        <property name="offText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>314</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="PushButton" name="PushButton_3">
+        <property name="text">
+         <string>测试&quot;启用设备&quot;通知</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PushButton" name="PushButton_4">
+        <property name="text">
+         <string>测试&quot;禁用禁用&quot;通知</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="BodyLabel" name="BodyLabel_9">
+     <property name="text">
+      <string>外观</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item>
+       <widget class="IconWidget" name="IconWidget_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_9" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_5">
+           <property name="text">
+            <string>通知图标</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel_11">
+           <property name="text">
+            <string>设置通知时显示的图标</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>743</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="PushButton" name="PushButton_5">
+        <property name="text">
+         <string>选择图标(.ico)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_6">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item>
+       <widget class="IconWidget" name="IconWidget_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_6">
+           <property name="text">
+            <string>应用图标</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel">
+           <property name="text">
+            <string>选择要显示的应用图标</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>113</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="PushButton" name="PushButton_6">
+        <property name="text">
+         <string>选择图片(.png)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="CardWidget" name="CardWidget_7">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item>
+       <widget class="IconWidget" name="IconWidget_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_7">
+           <property name="text">
+            <string>应用主题</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CaptionLabel" name="CaptionLabel_2">
+           <property name="text">
+            <string>选择要显示的应用主题</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>113</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="ComboBox" name="ComboBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_5" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>284</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="PushButton" name="PushButton">
+        <property name="text">
+         <string>重置设置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PrimaryPushButton" name="PrimaryPushButton">
+        <property name="text">
+         <string>保存设置 (重启软件后生效)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PrimaryPushButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>IconWidget</class>
+   <extends>QWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CardWidget</class>
+   <extends>QFrame</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaptionLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TitleLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>IndeterminateProgressBar</class>
+   <extends>QProgressBar</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SearchLineEdit</class>
+   <extends>LineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>DoubleSpinBox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
