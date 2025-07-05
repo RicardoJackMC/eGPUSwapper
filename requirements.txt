@@ -1,0 +1,4 @@
+plyer==2.1.0
+PyQt-Fluent-Widgets==1.8.3
+PyQt5==5.15.11
+WMI==1.5.1
