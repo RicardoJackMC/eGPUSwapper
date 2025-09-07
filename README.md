@@ -42,7 +42,8 @@
 
 ## 食用方法🍕
 > [!CAUTION]
-> ⚠️ [Configuration_view.ui](https://github.com/RicardoJackMC/eGPUSwapper/blob/main/Configuration_view.ui) 通过 pyuic 转换后得出的文件并非本软件最终使用的 [ Configuration_view.py](https://github.com/RicardoJackMC/eGPUSwapper/blob/main/Configuration_view.py)
+> **直接食用源码时请注意:**
+> ⚠️ [Configuration_view.ui](https://github.com/RicardoJackMC/eGPUSwapper/blob/main/Configuration_view.ui) 通过 pyuic 转换后得出的文件并非本软件最终使用的 [Configuration_view.py](https://github.com/RicardoJackMC/eGPUSwapper/blob/main/Configuration_view.py)
 ### 0. **使用前请确保自己的设备可以通过以下步骤实现"热插拔"**
 > 拔出:
 > 🔌 打开**设备管理器**, 在**显示适配器**中右击外接的显卡, 点击**禁用设备**, 拔出 Oculink 连接线
@@ -81,14 +82,14 @@
 *是不是觉得有点像 U 盘*
 
 > [!CAUTION]
-> ⚠️ 由于软件实际上进行的操作与[步骤0](#0. 使用前请确保自己的设备可以通过以下步骤实现"热插拔")的“热插拔”方法相同(详见[软件原理](#软件原理), 所以在拔出外接显卡的前提下重新启动计算机的情况下显卡同样会报错, 并且会导致软件自动退出, 此时再次重启可解决此问题
+> ⚠️ 由于软件实际上进行的操作与 [步骤0](##0-使用前请确保自己的设备可以通过以下步骤实现热插拔) 的“热插拔”方法相同 (详见[软件原理](#软件原理)), 所以在拔出外接显卡的前提下重新启动计算机的情况下显卡同样会报错, 并且会导致软件自动退出, 此时再次重启可解决此问题
 > 
 > 建议: 将"关机"操作换为"休眠"(不是"睡眠"), 可解决此问题
 
 *如果用"休眠"代替"关机", 为保证使用体验, 建议定期“关机”*
 
 ## 软件原理📒
-软件通过使用 Python 库 subprocess 调用 Windows 自带命令 [pnputil](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax) 实现设备的启用/禁用, 通过周期性 (周期即 Configuration.exe 中的**检查频率**设置项) 使用 [wmi 库](https://pypi.org/project/WMI/)/调用 [devcon.exe](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/devcon) (需用户自行安装, 并在 Configuration.exe 中设置) 实现对设备状态的监控, 其中使用 wmi 库和调用 devcon.exe 的条件及差异如下表
+软件通过使用 Python 库 subprocess 调用 Windows 自带命令 [pnputil](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax) 实现设备的启用/禁用, 通过周期性 (周期即 Configuration.exe 中的**检查频率**设置项) 使用 [wmi 库](https://pypi.org/project/WMI/) /调用 [devcon.exe](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/devcon) (需用户自行安装, 并在 Configuration.exe 中设置) 实现对设备状态的监控, 其中使用 wmi 库和调用 devcon.exe 的条件及差异如下表
 |                             | wmi 库                                                       | devcon.exe                                                   |
 | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 使用条件                    | 当**使用 devcon.exe** 配置项关闭时, 或当**使用 devcon.exe** 配置项开启但软件没有找到 devcon.exe 时 | 当**使用 devcon.exe** 配置项开启并且 devcon.exe 的路径被正确配置 |
@@ -133,7 +134,7 @@
   |HUAWEI Mate 40|·|·|
   |WD Elements 移动硬盘|·|X|
 
-*小声BB: 网上广为流传的[英伟达 43 补丁](https://egpu.io/forums/expresscard-mpcie-m-2-adapters/script-nvidia-error43-fixer/)*里面有 devcon.exe
+*小声BB: 网上广为流传的[英伟达 43 补丁](https://egpu.io/forums/expresscard-mpcie-m-2-adapters/script-nvidia-error43-fixer/)里面有 devcon.exe*
 
 ## 许可证🏛️
 
@@ -141,5 +142,5 @@ eGPUSwapper 使用 [GPLv3](https://github.com/RicardoJackMC/eGPUSwapper/blob/mai
 
 Copyright 2025 by RicardoJackMC
 
-> **Note**
+> **Note:**
 > 如果您是在阅读[软件原理](#软件原理)或软件源码后自行编写程序然后分发, 则您的程序可以不必使用 [GPLv3](https://github.com/RicardoJackMC/eGPUSwapper/blob/main/LICENSE) 许可证. 
